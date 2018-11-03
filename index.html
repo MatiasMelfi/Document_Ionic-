@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ionic Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cantora+One|Crete+Round|Chivo" rel="stylesheet">
+    
+</head>
+<body>
+   
+<nav id="navbar">
+    <header>Ionic Documentation Overview</header>
+    <ul>
+        <a class="nav-link" href="#OVERVIEW" rel="internal"><li>Overview</li></a>
+        <a class="nav-link" href="#ALL_ABOUT_IONIC" rel="internal"><li>All About Ionic</li></a>
+        <a class="nav-link" href="#INSTALLATION" rel="internal"><li>Installation</li></a>
+        <a class="nav-link" href="#Starting_your_App" rel="internal"><li>Starting your App</li></a>
+        <a class="nav-link" href="#Testing_your_App" rel="internal"><li>Testing your App</li></a>
+        <a class="nav-link" href="#Building_Out_your_App" rel="internal"><li>Building Out your App</li></a>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="OVERVIEW">
+        <header>Overview</header>
+        <article>
+            <h1>Overview</h1>
+          <p>Welcome! Ionic is a powerful <strong> HTML5 SDK </strong> that helps you build native-feeling mobile apps using web technologies like HTML, CSS, and Javascript.</p>
+    
+    <p>Ionic is focused mainly on the look and feel, and UI interaction of your app. That means we aren't a replacement for PhoneGap or your favorite Javascript framework. Instead, Ionic simply fits in well with these projects in order to simplify one big part of your app: the front end. We recommend reading Where does the Ionic Framework fit in? to get a good understanding of Ionic's goals.</p>
+    
+
+    <p>/ <strong> Ionic currently requires AngularJS </strong> in order to work at its full potential. While you can still use the CSS portion of the framework, you'll miss out on powerful UI interactions, gestures, animations, and other things.</p>
+
+    <p>We will be releasing Cordova/PhoneGap plugins in the future to expand the capabilities of your apps.</p>
+
+    <p>Contains diferrent css componets,them are folowwing:</p>
+
+    <li>Header</li>
+    <li>Content</li>
+    <li>Footer</li>
+    <li>Buttons</li>
+    <li>List</li>
+    <li>Cards</li>
+    <li>Forms</li>
+    <li>Toogle</li>
+    <li>Checkbox</li>
+    <li>Radio Buttons</li>
+    <li>Range</li>
+    <li>Select</li>
+    <li>Tabs</li>
+    <li>Grid</li>
+    <li>Utility</li>
+
+        </article>
+        </section>
+        <section class="main-section" id="ALL_ABOUT_IONIC">
+            <header>All About Ionic</header>
+            <article>
+                <h1>All About Ionic</h1>
+
+              <p>Welcome to the official guide to <strong> building HTML5 mobile apps with the Ionic Framework </strong>, written by the creators of Ionic. It contains all you need to know to get started building apps with Ionic, and lays a foundation for more advanced development.</p>
+                
+              <h2>What is Ionic, and where does it fit?</h2>
+
+              <p>Ionic is an HTML5 mobile app development framework targeted at building hybrid mobile apps. Hybrid apps are essentially small websites running in a browser shell in an app that have access to the native platform layer. Hybrid apps have many benefits over pure native apps, specifically in terms of platform support, speed of development, and access to 3rd party code.</p>
+              
+              <P>Think of Ionic as the front-end UI framework that handles all of the look and feel and UI interactions your app needs in order to be compelling. Kind of like “Bootstrap for Native,” but with support for a broad range of common native mobile components, slick animations, and beautiful design.</P>
+                
+              <P>Unlike a responsive framework, Ionic comes with very native-styled mobile UI elements and layouts that you’d get with a native SDK on iOS or Android but didn’t really exist before on the web. Ionic also gives you some opinionated but powerful ways to build mobile applications that eclipse existing HTML5 development frameworks.</P>
+              
+              <P>Since Ionic is an HTML5 framework, it needs a native wrapper like Cordova or PhoneGap in order to run as a native app. We strongly recommend using Cordova proper for your apps, and the Ionic tools will use Cordova underneath.</P>
+                
+              <h2>Why did we build Ionic?</h2>
+
+              <P>We built Ionic because we strongly believed that HTML5 would rule on mobile over time, exactly as it has on the desktop. Once desktop computers became powerful enough and browser technology had advanced enough, almost everyone was spending their computing time in the browser. And developers were overwhelmingly building web applications. With recent advancements in mobile technology, smartphones and tablets are now capable of running many of those same web applications.</P>
+           
+              <p>With Ionic, we wanted to build an HTML5 mobile development framework that was focused on native or hybrid apps instead of mobile websites, since we felt there were great tools already for mobile website development. So Ionic apps aren’t meant to be run in a mobile browser app like Chrome or Safari, but rather the low-level browser shell like iOS’s UIWebView or Android’s WebView, which are wrapped by tools like Cordova/PhoneGap.</p>
+
+              <P>And above all, we wanted to make sure Ionic was as open source as possible, both by having a permissive open source license that could be used in both commercial and open source apps, but by cultivating a strong community around the project. We felt there were too many frameworks that were technically open source, but were not open source in spirit or were not possible to use in both closed source and open source projects without purchasing a commercial license.</P>
+            
+                
+              <h2>Building Hybrid Apps With Ionic</h2>
+
+              <p>Those familiar with web development will find the structure of an Ionic app straightforward. At its core, it’s just a web page running in an native app shell! That means we can use any kind of HTML, CSS, and Javascript we want. The only difference is, instead of creating a website that others will link to, we are building a self-contained application experience.</p>           
+              
+              <p>The bulk of an Ionic app will be written in HTML, Javascript, and CSS. Eager developers might also dig down into the native layer with custom Cordova plugins or native code, but it’s not necessary to get a great app.</p>
+
+              <P>Ionic also uses AngularJS for a lot of the core functionality of the framework. While you can still use Ionic with just the CSS portion, we recommend investing in Angular as it’s one of the best ways to build browser-based applications today.</P>
+            
+            </articLe>
+            </section>
+
+            <section class="main-section" id="INSTALLATION">
+                    <header>Installation</header>
+                <article>
+
+                <h1>Installation</h1>
+                <p>In this chapter, we are going to walk through the process of downloading Ionic and installing all necessary dependencies for development.</p>
+            
+
+                <h2>Platform notes</h2>
+
+            <p>First, we need to start with a note about minimum requirements for building your app with the current release of Ionic. Ionic targets iPhone and Android devices (currently). We support iOS 7+, and Android 4.1+. However, since there are a lot of different Android devices, it’s possible certain ones might not work. As always, we are looking for help testing and improving our device compatibility and would love help from the community on our <strong> GitHub </strong> project.</p>
+            
+            <p>You can develop Ionic apps on any operating system you prefer. In fact, Ionic has been developed at various times on Mac OS X, Linux, and Windows. However, right now you’ll need to use the command line in order to follow this guide and you must have OS X in order to develop and deploy iPhone apps, so OS X is recommended if possible.</p>
+              
+            <p>If you are on Windows, make sure to download and install <strong> Git for Windows </strong> and optionally <strong> Console2 </strong>. You will be executing any commands in this guide in the Git Bash or Console2 windows.</p>
+        
+            <p>First, we will go and install the most recent version of <strong> Apache Cordova </strong>, which will take our app and bundle it into a native wrapper to turn it into a traditional native app.</p>
+
+             <p>To install Cordova, make sure you have <strong> Node.js </strong> installed, then run:</p>
+
+             <pre>sudo npm install -g cordova</pre>
+
+             <p>Drop <strong> sudo </strong> from the above command if running on Windows. Depending on the platforms you wish to develop for, you’ll need to install platform-specific tools. Follow the Cordova platform guides for Android and iOS to make sure you have everything needed for development on those platforms. Luckily, you’ll only need to do this once.</p>
+        
+             <h2>Install Ionic</h2>
+
+             <p>Now, we need to create a new Cordova project somewhere on the computer for the code for our app:</p>
+
+             <pre>ionic start todo blank --type ionic1</pre>
+
+             <p>That will create a folder called todo in the directory the command was run. Next, we will go into that directory and list the contents. Here is what the outer structure of your Ionic project will look like:</p>
+        
+             <pre>cd todo && ls
+
+├── bower.json     // bower dependencies
+├── config.xml     // cordova configuration
+├── gulpfile.js    // gulp tasks
+├── hooks          // custom cordova hooks to execute on specific commands
+├── ionic.project  // ionic configuration
+├── package.json   // node dependencies
+├── platforms      // iOS/Android specific builds will reside here
+├── plugins        // where your cordova/ionic plugins will be installed
+├── scss           // scss code, which will output to www/css/
+└── www            // application - JS code and libs, CSS, images, etc.</pre>
+
+            <p>If you are planning on using any version control system, you can go ahead and set it up in this new folder.</p>
+
+            <h2>Configure Platforms</h2>
+
+            <p>Now, we need to tell ionic that we want to enable the iOS and Android platforms. Note: unless you are on MacOS, leave out the iOS platform:</p>
+
+            <pre>ionic cordova platform add ios
+ionic cordova platform add android</pre>
+
+            <h2>Test it out</h2>
+
+            <p>Just to make sure the default project worked, try building and running the project (substitute ios for android to build for Android instead):</p>
+
+             <pre>ionic cordova build ios
+ionic cordova emulate ios</pre>
+
+            </article>
+                </section>
+
+                <section class="main-section" id="Starting_your_App">
+                        <header>Starting your App</header>
+                    <article> 
+
+                <h1>Starting your App</h1>
+                 
+                <p>Now that we’ve got everything installed and a new Cordova project created, let’s jump in and start building a real app!</p>
+
+                <p>The Todo list app is pretty much a rite of passage for frameworks, so we will walk through the process of building one with Ionic.</p>
+
+                <p>Since every Ionic app is basically a web page, we need to have an <strong> index.html </strong> file in our app which defines the first page that loads in the app. Let’s create <strong> www/index.html</strong> and initialize it with this:</p>
+
+<pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+        <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Todo<span class="nt">&lt;/title&gt;</span>
+            <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"</span><span class="nt">&gt;</span>
+                    
+             <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"lib/ionic/css/ionic.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+                    
+            <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lib/ionic/js/ionic.bundle.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                    
+            <span class="c">&lt;!-- Needed for Cordova/PhoneGap (will be a 404 during development) --&gt;</span>
+            <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"cordova.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+            <span class="nt">&lt;/head&gt;</span>
+        <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></pre>
+
+                <p>In the shell above, we are including the Ionic CSS and both the core Ionic JS and the Ionic AngularJS extensions in the <strong> ionic.bundle.js </strong> file. Ionic comes with <strong> ngAnimate </strong> and <strong> ngSanitize </strong> bundled in, but to use other Angular modules you’ll need to include them from the <strong> lib/js/angular </strong> directory.</p>
+
+                <p>Also note that the cordova.js or phonegap.js file must be the last script, and that this file will not be found in your development files, but rather automatically included when running or emulating your app.</p>
+                  
+                <p>Now that we have our starting place, we need to figure out what the UI of the app will look like. We have a ton of choices when it comes to UI design on mobile. There are a few standard layouts, like tabs and side menus, but there are practically infinite custom layouts that we could implement if we really wanted to (which Ionic encourages!). For the sake of this example, we are going to pick a simple Side Menu layout which lets us drag and expose a side menu with center content.</p>
+
+                <p>In the center content area, we will list the various tasks that we have to get completed for the current project. We can add new tasks, or edit existing ones. If we drag the center content over to the right, we expose the left side menu which lets us choose the current project we want to edit, or create new projects. Take a look at the mockup below for an example of what we are trying to build:</p>
+           
+
+                <img src="img/3-mockup.png">
+
+                <p>To create side menus in Ionic, we can use <strong>ion-side-menus </strong>. Feel free to read up on it, but the markup needed is simple. Edit the <strong> index.html </strong> file and change the <strong><span>&lt;body&gt;</span></strong> content to look like this:</p>
+           
+                <pre><code><span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;ion-side-menus&gt;</span>
+    <span class="nt">&lt;ion-side-menu-content&gt;</span>
+        <span class="nt">&lt;/ion-side-menu-content&gt;</span>
+        <span class="nt">&lt;ion-side-menu</span> <span class="na">side=</span><span class="s">"left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/ion-side-menu&gt;</span>
+<span class="nt">&lt;/ion-side-menus&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre>
+
+In the code above, we’ve added our <strong><span>&lt;ion-side-menus&gt;</span></strong> controller which will handle the dragging and exposing of the side menu. Inside of the controller we have a <strong><span>&lt;ion-side-menu-content&gt;</span></strong> which is the center content area of the app, and a <strong><span>&lt;ion-side-menu side="left"&gt;</span></strong>  which is a left, initially hidden, side menu.
+            
+        <h2>Initializing the app</h2>
+
+        <p>Now, if you run this code (more on testing in a bit), you wouldn’t see anything! There are two reasons for that: We haven’t created an AngularJS app to turn the custom tags (like <strong><span>&lt;ion-side-menus&gt;</span></strong> ) into anything functional, and we don’t have any content yet!</p>
+
+        <p>Let’s fix that. First, we need to create a new AngularJS module and tell Angular to initialize it. Let’s create a new file located at <strong> www/js/app.js</strong> . Put this code into the file:</p>
+
+        <pre>angular.module('todo', ['ionic'])</pre>
+
+        <p>This is the Angular way of creating an application, and we are telling angular to include the <strong>ionic</strong> module which includes all of the Ionic code which will process the tags above and make our app come to life.</p>
+
+        <p>Now, go back to index.html and right before the <strong><span>&lt;script src="cordova.js"&gt;</span> <span>&lt;/script"&gt;</span></strong> line, add:</p>
+
+        <pre><span>&lt;script src="js/app.js"&gt;</span> <span>&lt;/script&gt;</span></pre>
+
+        <p>This includes the script we just created.
+
+        And to make our new app run, we need to add the <strong> ng-app </strong> attribute to the body tag:</p>
+
+        <pre><span>&lt;body ng-app="todo"&gt;</span></pre>
+
+        <p>Now, we still won’t see anything if we run the code, because we need to add some content to the application. Let’s go ahead and add a header for both the center content area and the left menu.</p>
+
+        <p>Update the body content to be:</p>
+
+        <pre><code><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">"todo"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;ion-side-menus&gt;</span>
+          
+<span class="c">&lt;!-- Center content --&gt;</span>
+<span class="nt">&lt;ion-side-menu-content&gt;</span>
+     <span class="nt">&lt;ion-header-bar</span> <span class="na">class=</span><span class="s">"bar-dark"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Todo<span class="nt">&lt;/h1&gt;</span>
+            <span class="nt">&lt;/ion-header-bar&gt;</span>
+            <span class="nt">&lt;ion-content&gt;</span>
+        <span class="nt">&lt;/ion-content&gt;</span>
+<span class="nt">&lt;/ion-side-menu-content&gt;</span>
+          
+<span class="c">&lt;!-- Left menu --&gt;</span>
+<span class="nt">&lt;ion-side-menu</span> <span class="na">side=</span><span class="s">"left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ion-header-bar</span> <span class="na">class=</span><span class="s">"bar-dark"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Projects<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/ion-header-bar&gt;</span>
+<span class="nt">&lt;/ion-side-menu&gt;</span>           
+    <span class="nt">&lt;/ion-side-menus&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre>
+
+</section>
+
+    <section class="main-section" id="Testing_your_App">
+            <header>Testing your App</header>
+        <article>
+        <h1>Testing your App</h1>
+
+        <p>Now, since we actually have something to look at, we need to talk about the testing and development process for our app. There are four ways to test your app as you develop: in a desktop WebKit browser, in the iOS or Android simulator, in a mobile browser on your phone, or as a native app on the phone.</p>
+        
+        <h2>Desktop browser testing</h2>
+
+        <p>Testing your app in a browser is as simple as running the serve command in your project’s root folder.</p>
+
+        <pre>ionic serve</pre>
+
+        <p>This will start a live-reload server for your project. When changes are made to any HTML, CSS, or JavaScript files, the browser will automatically reload when the files are saved.</p>
+
+        <p>
+                <img src="img/3-running.png" style="border: 1px solid #ccc;border-bottom:1px solid #ccc; border-radius: 4px;" alt="Running">
+        </p>
+
+        <p>Try dragging the center content to the right (works with the mouse as well) to expose the left menu. Smooth like butter!</p>
+
+        </article>
+    </section>
+
+    <section class="main-section" id="Building_Out_your_App">
+            <header>Building Out your App</header>
+        <article>
+            <h1>Building Out your App</h1>
+    
+           <p>Now that we know everything there is to know about testing our Ionic apps, and we have a working app shell, let’s move on to actually making some bacon!</p>
+    
+           <p>So, let’s take another look at our mockup:</p>
+
+           <img src="img/3-mockup.png">
+
+           <p>We can see that both the center content and side menus have lists. Lists in Ionic are very powerful, and come with a lot of different features commonly see in native apps. Luckily, adding them is really simple.</p>
+           
+           <p>Since we are using AngularJS, we are going to use the <strong> ng-repeat </strong>directive to create a new list item for every single task we have in a given project:</p>
+        
+           <p>With the list code and the Angular <strong> ng-repeat</strong> , the center content becomes:</p>
+
+ <pre><code><span class="c">&lt;!-- Center content --&gt;</span>
+    <span class="nt">&lt;ion-side-menu-content&gt;</span>
+            <span class="nt">&lt;ion-header-bar</span> <span class="na">class=</span><span class="s">"bar-dark"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Todo<span class="nt">&lt;/h1&gt;</span>
+                <span class="nt">&lt;/ion-header-bar&gt;</span>
+                  <span class="nt">&lt;ion-content&gt;</span>
+                    <span class="c">&lt;!-- our list and list items --&gt;</span>
+                    <span class="nt">&lt;ion-list&gt;</span>
+                      <span class="nt">&lt;ion-item</span> <span class="na">ng-repeat=</span><span class="s">"task in tasks"</span><span class="nt">&gt;</span>
+                        {{task.title}}
+                <span class="nt">&lt;/ion-item&gt;</span>
+            <span class="nt">&lt;/ion-list&gt;</span>
+    <span class="nt">&lt;/ion-content&gt;</span>
+<span class="nt">&lt;/ion-side-menu-content&gt;</span></code></pre>          
+
+        <p>But this doesn’t do anything yet, because we don’t have any tasks or any code to drive our application. To do this, we need to create an Angular controller and add it to the page. We are going to just use one controller for this app, called <strong> TodoCtrl </strong>. We are going to add it directly to the body tag:</p>
+        
+        <pre><span class="nt">&lt;body</span> <span class="na">ng-app=</span><span class="s">"todo"</span> <span class="na">ng-controller=</span><span class="s">"TodoCtrl"</span><span class="nt">&gt;</span>
+        </pre>
+
+        <p>Then, we need to define this controller in our <strong> app.js </strong> file, and we can add some testing tasks in:</p>
+
+        <pre><code>angular.module('todo', ['ionic'])
+
+.controller('TodoCtrl', function($scope) {
+    $scope.tasks = [
+    { title: 'Collect coins' },
+    { title: 'Eat mushrooms' },
+    { title: 'Get high enough to grab the flag' },
+    { title: 'Find the Princess' }
+];
+})</code></pre>
+
+        <p>Run the example again, and we should see our list of very important tasks!</p>
+
+        <p>
+            <img src="img/4-list.png" alt="Running" style="border: 1px solid #ccc; border-radius: 4px;">
+        </p>
+
+        <h2>Creating tasks</h2>
+
+        <p>Okay, so we have some testing data for tasks, but what about creating them? We need some ways to do that. Working with our test data, let’s add a simple Modal window that slides up, letting us put in a new task. Place the following script tag after the closing <strong><span class="nt">&lt;/ion-side-menu&gt;</span></strong>tag in the <strong><span class="nt">&lt;body&gt;</span></strong> of the HTML file:</p>
+
+        <pre><code><span class="nt">&lt;script </span><span class="na">id=</span><span class="s">"new-task.html"</span> <span class="na">type=</span><span class="s">"text/ng-template"</span><span class="nt">&gt;</span>
+                        
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"modal"</span><span class="o">&gt;</span>
+                        
+<span class="c">&lt;!--</span> <span class="nx">Modal</span> <span class="nx">header</span> <span class="nx">bar</span> <span class="o">--&gt;</span>
+        <span class="o">&lt;</span><span class="nx">ion</span><span class="o">-</span><span class="nx">header</span><span class="o">-</span><span class="nx">bar</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"bar-secondary"</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="nx">h1</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"title"</span><span class="o">&gt;</span><span class="nx">New</span> <span class="nx">Task</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+        </span>      <span class="o">&lt;</span><span class="nx">button</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"button button-clear button-positive"</span> <span class="nx">ng</span><span class="o">-</span><span class="nx">click</span><span class="o">=</span><span class="s2">"closeNewTask()"</span><span class="o">&gt;</span><span class="nx">Cancel</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+        </span>    <span class="o">&lt;</span><span class="sr">/ion-header-bar</span><span class="err">&gt;
+        </span>
+            <span class="c">&lt;!--</span> <span class="nx">Modal</span> <span class="nx">content</span> <span class="nx">area</span> <span class="o">--&gt;</span>
+            <span class="o">&lt;</span><span class="nx">ion</span><span class="o">-</span><span class="nx">content</span><span class="o">&gt;</span>
+                        
+             <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">ng</span><span class="o">-</span><span class="nx">submit</span><span class="o">=</span><span class="s2">"createTask(task)"</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"list"</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">label</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"item item-input"</span><span class="o">&gt;</span>
+                     <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"What do you need to do?"</span> <span class="nx">ng</span><span class="o">-</span><span class="nx">model</span><span class="o">=</span><span class="s2">"task.title"</span><span class="o">&gt;</span>
+                     <span class="o">&lt;</span><span class="sr">/label</span><span class="err">&gt;
+                        </span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+                        </span>        <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"padding"</span><span class="o">&gt;</span>
+                                  <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"submit"</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"button button-block button-positive"</span><span class="o">&gt;</span><span class="nx">Create</span> <span class="nx">Task</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+        </span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+        </span>      <span class="o">&lt;</span><span class="sr">/form</span><span class="err">&gt;
+         </span>
+         <span class="o">&lt;</span><span class="sr">/ion-content</span><span class="err">&gt;</span>
+   <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span><span class="nt">&lt;/script&gt;</span></code></pre>
+
+    <p>There is a lot of information in the above code. First of all, we are defining this template as an Angular template using <strong><span class="nt">&lt;script id="new-task.html" type="text/ng-template"&gt;</span></strong>. The good thing about Angular templates is they can be loaded from anywhere: locally or remote. The URL of the template is the unique identifier, and if the template is defined locally, it will be fetched locally. Templates are a great way to separate layouts and UIs, so we use them extensively.</p>
+    </article>
+        </section>
+
+
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
